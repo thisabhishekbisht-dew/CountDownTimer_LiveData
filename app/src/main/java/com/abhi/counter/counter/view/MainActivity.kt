@@ -1,11 +1,11 @@
-package com.abhi.counter.view_model.view
+package com.abhi.counter.counter.view
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.abhi.counter.view_model.MainActivityViewModel
+import com.abhi.counter.counter.MainActivityViewModel
 import com.abhi.counter_livedata.databinding.ActivityMainBinding
 import com.microsoft.appcenter.AppCenter
 import com.microsoft.appcenter.analytics.Analytics
@@ -17,8 +17,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-/*Add and Initialize Appcentre to this project*/
+        /*Add and Initialize Appcentre to this project*/
         AppCenter.start(
             application, "1f3569ef-61f9-4793-bcf4-b0dccccb259c",
             Analytics::class.java, Crashes::class.java

@@ -1,4 +1,4 @@
-package com.abhi.counter.view_model
+package com.abhi.counter.counter
 
 import android.os.CountDownTimer
 import androidx.lifecycle.LiveData
